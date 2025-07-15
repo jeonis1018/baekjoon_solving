@@ -30,4 +30,6 @@
 
 ---
 
-이미 해결한 문제 코드도 주석 추가나 코드 다듬기 진행하며 꾸준히 업데이트 할 예정입니다. 😊  
+이미 해결한 문제도 주석 추가 및 코드 최적화 진행하며 꾸준히 업데이트 할 예정입니다. 😊  
+
+[![Solved.ac Profile](http://mazassumnida.wtf/api/generate_badge?boj=andrewbravo)](https://solved.ac/andrewbravo)
