@@ -1,5 +1,6 @@
-/* 백준21736(친구찾기)
+/* 백준 21736(헌내기는 친구가 필요해)
 입력받은 이차원 배열의 정보를 담은 구조체를 구현하여 dfs/bfs로 만날 수 있는 친구의 수를 카운트 */
+
 #include <stdio.h>
 #include <stdio.h>
 #include <stdlib.h>

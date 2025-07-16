@@ -1,4 +1,3 @@
-#define _CRT_SECURE_NO__WARNINGS
 #include <stdio.h>
 
 int main() {
