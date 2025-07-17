@@ -20,7 +20,7 @@
 
 - 채점 언어: `C11` 기준
 - 표준 입출력 사용 (`scanf`, `printf`)
-- 문제의 조건과 예제를 주석으로 포함해 가독성을 높이려고 노력함
+- 문제 해결의 핵심 아이디어와 중요 부분 주석을 통해 가독성 향상
 
 ## ✅ 목표
 
@@ -30,6 +30,6 @@
 
 ---
 
-이미 해결한 문제도 주석 추가 및 코드 최적화 진행하며 꾸준히 업데이트 할 예정입니다. 😊  
+이미 해결한 문제도 주석 추가, 예외처리 및 코드 최적화 진행하며 꾸준히 업데이트 할 예정입니다. 😊  
 
 [![Solved.ac Profile](http://mazassumnida.wtf/api/generate_badge?boj=andrewbravo)](https://solved.ac/andrewbravo)
