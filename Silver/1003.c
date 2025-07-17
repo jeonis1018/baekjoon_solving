@@ -2,7 +2,6 @@
 수가 1 증가할때마다 0의 개수는 이전 수의 1의 개수가 되고, 1의 개수는 이전 0의 개수가 더해진다는 특성 활용 */
 
 #include <stdio.h>
-#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <math.h>

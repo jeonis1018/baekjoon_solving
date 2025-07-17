@@ -2,7 +2,6 @@
 입력받은 이차원 배열의 정보를 담은 구조체를 구현하여 dfs/bfs로 만날 수 있는 친구의 수를 카운트 */
 
 #include <stdio.h>
-#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <math.h>

@@ -2,7 +2,6 @@
 입력받은 배열을 정렬 및 중복 제거된 배열로 변형한 뒤, 해당 값이 위치한 인덱스 값으로 변형하여 좌표 압축 */
 
 #include <stdio.h>
-#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <math.h>

@@ -2,7 +2,6 @@
 dfs를 통해서 배추흰지렁이의 최소 개수를 구한다 */
 
 #include <stdio.h>
-#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <math.h>
