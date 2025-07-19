@@ -53,6 +53,32 @@ void free_queue(queue* q) {
     free(q->data);
 }
 
+typedef struct {
+    int visited;
+    int connected_cnt;
+    int* connected;
+} target;
+
+void bfs (target* t, int start, int t_size) {
+    t[start].visited = 1;
+    queue q;
+    init_queue(&q, t_size);
+    enqueue(&q, start);
+
+    while (!is_empty(&q)) {
+        int current_num = dequeue(&q);
+        for (int i = 0; i < t[current_num].connected_cnt; i++) {
+            int next = t[current_num].connected[i];
+            if (t[next].visited == 0) {
+                t[next].visited = 1;
+                enqueue(&q, next);
+            }
+        }
+    }
+
+    free_queue(&q);
+}
+
 int main(void) {
 
 
