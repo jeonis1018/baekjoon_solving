@@ -1,4 +1,4 @@
-/*
+/* 백준 1()
  */
 
 #include <stdio.h>
