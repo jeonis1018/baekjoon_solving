@@ -9,6 +9,8 @@
 #include <ctype.h>
 #include <stdbool.h>
 
+#define max_size 1001
+
 int main(void) {
     
 
