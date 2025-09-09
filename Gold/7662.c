@@ -11,25 +11,23 @@
 
 typedef struct {
     int* heap;
-    int cur;
+    int rear;
 } db_queue;
 
 void init_queue (db_queue* dq, int size) {
     dq->heap = malloc(size * sizeof(int));
-    dq->cur = 0;
+    dq->rear = 0;
     dq->heap[0] = 0;
 }
 
 void insert (db_queue* dq, int value) {
-    if (dq->cur == 0) {
-        dq->heap[++dq->cur] = value;
-        return;
-    }
+    dq->rear++;
+    if ((int)floor(log2(dq->rear)) % 2 == 0) {  //min 레벨에 삽입되었을 경우
+        if (dq->rear / 2 != 0 && dq->heap[dq->rear / 2] < value) {
+            
+        }
+    } else {    //max레벨에 삽입되었을 경우
 
-    if (((dq->cur + 1) / 2) % 2 == 1) {
-
-    } else {
-        
     }
 }
 
@@ -64,7 +62,7 @@ int main(void) {
             if (func == 'I') {
                 insert(&dq, value);
             } else if (func == 'D') {
-                if (dq.cur <= 0) continue;
+                if (dq.rear <= 0) continue;
                 if (value == 1) {
                     delete_max(&dq);
                 } else if (value == -1) {
@@ -73,10 +71,13 @@ int main(void) {
             } else return 1;
         }
 
-        if (dq.cur <= 0) printf("EMPTY\n");
+        if (dq.rear <= 0) printf("EMPTY\n");
         else {
-            if (dq.cur == 1) printf("%d %d\n", dq.heap[1], dq.heap[1]);
-            else printf("%d %d\n", dq.heap[1], dq.heap[2]);
+            if (dq.rear == 1) {
+                int n = delete_min(&dq);
+                printf("%d %d", n, n);
+            }
+            else printf("%d %d\n", delete_min(&dq), delete_max(&dq));
         }
 
         free_queue(&dq);
